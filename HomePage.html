@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>My Family</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navBar {
+            display: flex;
+            align-items: center;
+            background-color: #404040;
+            width: auto;
+            height: 60px;
+            box-shadow: 80px 80px 80px 80px #101010;
+        }
+
+        .sep {
+            width: 570px;
+        }
+
+        .topName {
+            font-size: 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+            color: #1BADFF;
+            font-weight: bold;
+            padding: 0 40px;
+        }
+
+        .topMenu a {
+            font-size: 1.3rem;
+            color: #25FFB1;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0 7px;
+            cursor: pointer;
+        }
+
+        .topMenu a:hover {
+            border: 2px solid #FB1E46;
+            background-color: #404040;
+            padding: 6px 8px;
+            border-radius: 5px;
+        }
+
+        .welcome {
+            background-color: #303030;
+            height: 545px;
+        }
+
+        .welcome_para {
+           position: relative;
+           font-family: 'Montserrat', sans-serif;
+           letter-spacing: 2px;
+           text-transform: uppercase;
+           width: 100%;
+           padding: 250px 0px;
+           font-size: 3rem;
+           text-align: center;
+           line-height: 0.70rem;
+           outline: none;
+           animation: animate 5s  linear infinite;
+        }
+
+        @keyframes animate {
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+                color: #0e3742;
+                text-shadow: none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+                color: #fff;
+                text-shadow:  0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <div class="topName">My Family</div>
+        <div class="sep"></div>
+        <div class="topMenu">
+            <a href="#">Home</a>
+            <a href="./AboutPage.html">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Video</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <p class="welcome_para">Welcome to our family</p>
+    </div>
+</body>
+</html>
